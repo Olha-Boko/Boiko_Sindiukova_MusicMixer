@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_click" id="trumpet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5E2384;}
+	.st1{fill:none;stroke:#FDB914;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+</style>
+<circle id="background" class="st0" cx="36" cy="36" r="36"/>
+<path id="iconStroke" class="st1" d="M17.4,58.8l19.9-19.9c0,0,3.3-4.1,6.3-1.3c2.9,2.9-0.8,6.7-0.8,6.7L31.9,55.1
+	c0,0-3.5,4.1-8.1-0.3S23,46.3,23,46.3l18.4-18.4c7.5-6.7,8.7-17.9,8.7-17.9l12.4,12.4c0,0-10.8,1.2-19.8,10.1 M29.2,35l-3.9,3.9
+	l1.9-1.9l2.6,2.6 M22.7,41.6l-3.9,3.9l1.9-1.9l2.6,2.6 M35.7,28.5l-3.9,3.9l1.9-1.9l2.6,2.6 M15.5,56.9l3.9,3.9"/>
+</svg>
