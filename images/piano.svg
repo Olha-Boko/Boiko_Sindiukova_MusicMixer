@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="icon_click" id="piano" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5E2384;}
+	.st1{fill:none;stroke:#FDB914;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+</style>
+<circle id="background" class="st0" cx="36" cy="36" r="36"/>
+<path id="iconStroke" class="st1" d="M22.4,30.3h34v22.1c0,1.8-1.5,3.3-3.3,3.3H18.8c-1.8,0-3.3-1.5-3.3-3.3V30.3H22.4z
+	 M33.9,30.3h-4l0,15.9c0,3.2,4,3.3,4,0L33.9,30.3z M42.5,30.3h-4l0,15.9c0,3.2,4,3.3,4,0L42.5,30.3z M25.3,30.3h-4l0,15.9
+	c0,3.2,4,3.3,4,0L25.3,30.3z M23.3,48.7v7.1 M31.9,48.7l0,7.1 M40.5,48.7v7.1 M51.2,30.3h-4l0,15.9c0,3.2,4,3.3,4,0L51.2,30.3z
+	 M49.2,48.7v7.1 M56.4,30.3c0,0,1.6-9-7.2-8.9c-10.7,0.1-10.7-10.1-22.9-8.5c-11.6,1.5-10.8,17.4-10.8,17.4"/>
+</svg>
