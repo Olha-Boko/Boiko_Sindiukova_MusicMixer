@@ -1,1 +1,3 @@
-# Boiko_Sindiukova_MusicMixer
+# Music Mixer
+
+This is an awesome Music Mixer project by Olha Boiko and Evgenia Sindiukova
