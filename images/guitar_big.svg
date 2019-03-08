@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 121.5 122.5" style="enable-background:new 0 0 121.5 122.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BC61A6;}
+	.st1{fill:none;stroke:#FAB616;stroke-width:3.7767;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+	.st2{fill:none;stroke:#FAB616;stroke-width:3.8817;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+</style>
+<circle class="st0" cx="62.1" cy="63.4" r="59.1"/>
+<g id="guitar_x5F_group">
+	<path class="st1" d="M42.7,62c3-5.3,6.7,7.7,15.7,11.6s16-2.8,19.2,0c3.2,2.8-4.9,9-4.9,13.3s8.3,11.3,5.6,18.3
+		c-3.7,9.5-27.2,10.9-33.1,0c-5-9.3,7.4-13.9,7.4-19.2C52.7,80.7,38.1,70.1,42.7,62z"/>
+	<path class="st1" d="M64.9,94.4V18.1L56.3,34c0,0,3.9,2.1,4.3,5.8v54.6"/>
+	<line class="st1" x1="60.4" y1="102.9" x2="64.9" y2="102.9"/>
+	<polyline class="st1" points="55.6,31 52,28.8 49.8,32.3 54.1,25.3 	"/>
+	<polyline class="st1" points="62.1,19.7 58.4,17.6 56.3,21 60.6,14 	"/>
+</g>
+<circle class="st0" cx="60.8" cy="60.8" r="60.8"/>
+<g id="guitar_x5F_group_1_">
+	<path class="st2" d="M40.8,59.3c3.1-5.5,6.9,8,16.2,11.9s16.4-2.9,19.7,0s-5,9.3-5,13.7s8.6,11.6,5.8,18.8c-3.8,9.7-28,11.2-34.1,0
+		c-5.2-9.5,7.6-14.3,7.6-19.7S36.1,67.7,40.8,59.3z"/>
+	<path class="st2" d="M63.6,92.6V14.2l-8.8,16.3c0,0,4,2.2,4.4,6v56.1"/>
+	<line class="st2" x1="59" y1="101.3" x2="63.6" y2="101.3"/>
+	<polyline class="st2" points="54,27.5 50.4,25.2 48.1,28.8 52.5,21.6 	"/>
+	<polyline class="st2" points="60.7,15.9 56.9,13.7 54.8,17.2 59.2,10 	"/>
+</g>
+</svg>
