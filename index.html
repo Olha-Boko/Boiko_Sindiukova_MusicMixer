@@ -1,15 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>projekt</title>
-		<!-- link to reset first -->
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+<head>
+<meta charset="utf-8">
+	<title>Music Mixer</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+		<header>
+			<h1>Your Awesome Band</h1>
+			<div id="images">
+			<div id="img1">
+			<img src="images/guitar_player.svg" alt="Guital Player">
+		    </div>
+		    <div id="img2">
+		    	<img src="images/drummer.svg" alt="Drummer">
+		    </div>
+		    <div id="img3">
+		    	<img src="images/singer.svg" alt="Girl singing">
+		    </div>
+		    <div id="img4">
+		    	<img src="images/keyboard_player.svg" alt="Keyboard Player">
+		    </div>
+		</div>
+		</header>
+		<section>
+			<div id="icons">
+				<div id="iconimg1" >
+				<!-- <img id="iconimg1" src="images/guitar_big.svg" alt="guitar icon"> -->
+			    </div >
+			    <div id="iconimg2">
+				<!-- <img id="iconimg2" src="images/drums_big.svg" alt="Drums Icon"> -->
+			    </div>
+				<div  id="iconimg3">
+				<!-- <img id="iconimg3"  src="images/mic_big.svg" alt="Microphone Icon"> -->
+			    </div>
+			    <div class="empty" id="iconimg4">
+				<!-- <img id="iconimg4"  src="images/keyboard_big.svg" alt="Keyboard Icon"> -->
+			    </div>
+				
+			</div>
+			<div id="play">
+				<h2>Choose your musical instruments</h2>
+				<div id="choose">
+				<div id="guitar">
+					<h3>Guitar</h3>
+					<div draggable="true" id="dragElement">
+					<audio id="audio" src="audio/guitar1.mp3"></audio>
+					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" onclick="guitar()" >
+				    </div>
+				    <div id="guitarImg1">
+				    <audio id="guitar2" src="audio/guitar2.mp3"></audio>
+					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" onclick="guitarTwo()">
+				    </div>
+				    <div id="guitarImg2">
+				    <audio id="guitar3" src="audio/guitar3.mp3"></audio>
+					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" onclick="guitarThree()">
+				    </div>
+					
+				</div>
+				<div id="Drums">
+					<h3>Drums</h3>
+					<div>
+					<img src="images/drums_small.svg" alt="Drums Icon Yellow">
+				    </div>
+				    <div id="drumsImg1">
+					<img src="images/drums_small.svg" alt="Drums Icon Yellow">
+				    </div>
+				    <div id="drumsImg2">
+					<img src="images/drums_small.svg" alt="Drums Icon Yellow">
+				    </div>
+					
+				</div>
+				<div id="voice">
+					<h3>Voice</h3>
+					<div draggable="true" id="dragElement1">
+					<audio id="accapella" src="audio/acapella1.mp3"></audio>
+					<img src="images/mic_small.svg" alt="Mic Small Yellow" value="PLAY" onclick="accapellaOne()">
+				    </div>
+				    <div id="voiceImg1">
+				    <audio id="accapella2" src="audio/accapella2.mp3"></audio>
+					<img src="images/mic_small.svg" alt="Mic Small Yellow" value="PLAY" onclick="accapellaTwo()">
+				    </div>
+				    <div id="voiceImg2">
+					<img src="images/mic_small.svg" alt="Mic Small Yellow">
+				   </div>
+					
+				</div>
+				<div id="keyboard">
+					<div>
+					<h3 class="word">Keyboard</h3>
+				    </div>
+					<div>
+					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow">
+				    </div>
+				    <div id="keyboardImg1">
+					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow">
+				    </div>
+				    <div id="keyboardImg2">
+					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow">
+				    </div>
+					
+				</div>
+				</div>
+				
+			</div>
+		</section>
+		<div>
+</div>
+		
+	</div>
 
-	</head>
-	<body>
-		<!-- load js at bottom so DOM gets built-->
-		<script src="js/main.js"></script>
-	</body>
+	<script src="js/main.js"></script> 
+
+</body>
 </html>
