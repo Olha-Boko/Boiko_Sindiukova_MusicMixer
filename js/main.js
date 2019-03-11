@@ -20,6 +20,34 @@ dropLoc.ondrop = function(evt){
 	var myElement = document.getElementById('dropItem');
 	console.log(myElement);
 	this.append(dragElement);
+	audio.play();
+
+}
+
+
+
+var dragItem2 = document.getElementById("dragElement2");
+var dropLoc2 = document.getElementById("iconimg2");
+
+dragItem2.ondragstart = function(evt) {
+	evt.dataTransfer.setData('key', 'dragElement2');
+   console.log("its dragging");
+}
+
+dropLoc2.ondragover = function(evt){
+	evt.preventDefault();
+	console.log("its")
+}
+
+dropLoc2.ondrop = function(evt){
+	var dropItem2 = evt.dataTransfer.getData('key');
+    evt.preventDefault();
+	console.log("dropped");
+	console.log(dropItem2);
+	var myElement2 = document.getElementById('dropItem2');
+	console.log(myElement2);
+	this.append(dragElement2);
+	drums1.play();
 }
 
 
@@ -44,6 +72,32 @@ dropLoc1.ondrop = function(evt){
 	var myElement1 = document.getElementById('dropItem1');
 	console.log(myElement1);
 	this.append(dragElement1);
+	accapella.play();
+}
+
+
+var dragItem3 = document.getElementById("dragElement3");
+var dropLoc3 = document.getElementById("iconimg4");
+
+dragItem3.ondragstart = function(evt) {
+	evt.dataTransfer.setData('key', 'dragElement3');
+   console.log("its dragging");
+}
+
+dropLoc3.ondragover = function(evt){
+	evt.preventDefault();
+	console.log("its")
+}
+
+dropLoc3.ondrop = function(evt){
+	var dropItem3 = evt.dataTransfer.getData('key');
+    evt.preventDefault();
+	console.log("dropped");
+	console.log(dropItem3);
+	var myElement3 = document.getElementById('dropItem3');
+	console.log(myElement3);
+	this.append(dragElement3);
+	keyboard1.play();
 }
 
 
@@ -198,6 +252,130 @@ accapella2.onplaying = function() {
 	isPlaying = true;
 };
 accapella2.onpause = function() {
+	isPlaying = false;
+};
+
+var accapella3 = document.getElementById('accapella3');
+var isPlaying = false;
+function accapellaThree() {
+	if (isPlaying) {
+		accapella3.pause()
+	} else { 
+		accapella3.play();
+
+	}
+};
+accapella3.onplaying = function() {
+	isPlaying = true;
+};
+accapella3.onpause = function() {
+	isPlaying = false;
+};
+
+
+var drums1 = document.getElementById('drums1');
+var isPlaying = false;
+function drumsOne() {
+	if (isPlaying) {
+		drums1.pause()
+	} else { 
+		drums1.play();
+
+	}
+};
+drums1.onplaying = function() {
+	isPlaying = true;
+};
+drums1.onpause = function() {
+	isPlaying = false;
+};
+
+
+var drums2 = document.getElementById('drums2');
+var isPlaying = false;
+function drumsTwo() {
+	if (isPlaying) {
+		drums2.pause()
+	} else { 
+		drums2.play();
+
+	}
+};
+drums2.onplaying = function() {
+	isPlaying = true;
+};
+drums2.onpause = function() {
+	isPlaying = false;
+};
+
+var drums3 = document.getElementById('drums3');
+var isPlaying = false;
+function drumsThree() {
+	if (isPlaying) {
+		drums3.pause()
+	} else { 
+		drums3.play();
+
+	}
+};
+drums3.onplaying = function() {
+	isPlaying = true;
+};
+drums3.onpause = function() {
+	isPlaying = false;
+};
+
+var keyboard1 = document.getElementById('keyboard1');
+var isPlaying = false;
+function KeyboardOne() {
+	if (isPlaying) {
+		keyboard1.pause()
+	} else { 
+		keyboard1.play();
+
+	}
+};
+keyboard1.onplaying = function() {
+	isPlaying = true;
+};
+keyboard1.onpause = function() {
+	isPlaying = false;
+};
+
+
+var keyboard2 = document.getElementById('keyboard2');
+var isPlaying = false;
+function KeyboardTwo() {
+	if (isPlaying) {
+		keyboard2.pause()
+	} else { 
+		keyboard2.play();
+
+	}
+};
+keyboard2.onplaying = function() {
+	isPlaying = true;
+};
+keyboard2.onpause = function() {
+	isPlaying = false;
+};
+
+
+
+var keyboard3 = document.getElementById('keyboard3');
+var isPlaying = false;
+function KeyboardThree() {
+	if (isPlaying) {
+		keyboard3.pause()
+	} else { 
+		keyboard3.play();
+
+	}
+};
+keyboard3.onplaying = function() {
+	isPlaying = true;
+};
+keyboard3.onpause = function() {
 	isPlaying = false;
 };
 
