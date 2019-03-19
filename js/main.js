@@ -1,153 +1,68 @@
+// WORKING DRAG AND DROP!!!!!
+// ALMOST DIED TRYING TO DO IT
 
-var dragItem = document.getElementById("dragElement");
-var dropLoc = document.getElementById("iconimg1");
+function initDragAndDrop(box, icon) {
+	// for all iteams
+	icon = document.querySelectorAll(".icon"); 
+	// for all drag and drop
+	boxes = document.querySelectorAll(".box"); 
 
-dragItem.ondragstart = function(evt) {
-	evt.dataTransfer.setData('key', 'dragElement');
-   console.log("its dragging");
+icon.forEach(function(musicIcons) {
+	musicIcons.addEventListener('dragstart', dragStart);
+	musicIcons.addEventListener('dragend', dragEnd);
+	musicIcons.addEventListener('dragover', dragElementOver);
+});
+
+function dragElementOver(){
+	child = this;
+	console.log("its dragging")
 }
 
-dropLoc.ondragover = function(evt){
-	evt.preventDefault();
-	console.log("its")
-}
+for (const box of boxes){
+		box.addEventListener('dragover', dragOver);
+		box.addEventListener('dragenter', dragEnter);
+		box.addEventListener('dragleave', dragLeave);
+		box.addEventListener('drop', dragDrop);
+	}
 
-dropLoc.ondrop = function(evt){
-	var dropItem = evt.dataTransfer.getData('key');
-    evt.preventDefault();
-	console.log("dropped");
-	console.log(dropItem);
-	var myElement = document.getElementById('dropItem');
-	console.log(myElement);
-	this.append(dragElement);
-	audio.play();
+	function dragStart(){
+		currentitem = this;
+	}
 
-}
+	function dragEnd(){
+		this.className = 'icon'; 
+	}
 
+	function dragOver(e){
+		e.preventDefault();
+	}
 
+	function dragEnter(e){
+		e.preventDefault();
+	}
 
-var dragItem2 = document.getElementById("dragElement2");
-var dropLoc2 = document.getElementById("iconimg2");
+	function dragLeave(){
+		this.className = 'box';
+	}
 
-dragItem2.ondragstart = function(evt) {
-	evt.dataTransfer.setData('key', 'dragElement2');
-   console.log("its dragging");
-}
+	function dragDrop(){
+		this.className = 'box';
+		if(this.childNodes[0] && child != null){
+			this.append(currentitem);
+		}
+		
+	}
 
-dropLoc2.ondragover = function(evt){
-	evt.preventDefault();
-	console.log("its")
-}
+	}
 
-dropLoc2.ondrop = function(evt){
-	var dropItem2 = evt.dataTransfer.getData('key');
-    evt.preventDefault();
-	console.log("dropped");
-	console.log(dropItem2);
-	var myElement2 = document.getElementById('dropItem2');
-	console.log(myElement2);
-	this.append(dragElement2);
-	drums1.play();
-}
+	initDragAndDrop('.box', '.icon');
 
-
-var dragItem1 = document.getElementById("dragElement1");
-var dropLoc1 = document.getElementById("iconimg3");
-
-dragItem1.ondragstart = function(evt) {
-	evt.dataTransfer.setData('key', 'dragElement1');
-   console.log("its dragging");
-}
-
-dropLoc1.ondragover = function(evt){
-	evt.preventDefault();
-	console.log("its")
-}
-
-dropLoc1.ondrop = function(evt){
-	var dropItem1 = evt.dataTransfer.getData('key');
-    evt.preventDefault();
-	console.log("dropped");
-	console.log(dropItem1);
-	var myElement1 = document.getElementById('dropItem1');
-	console.log(myElement1);
-	this.append(dragElement1);
-	accapella.play();
-}
-
-
-var dragItem3 = document.getElementById("dragElement3");
-var dropLoc3 = document.getElementById("iconimg4");
-
-dragItem3.ondragstart = function(evt) {
-	evt.dataTransfer.setData('key', 'dragElement3');
-   console.log("its dragging");
-}
-
-dropLoc3.ondragover = function(evt){
-	evt.preventDefault();
-	console.log("its")
-}
-
-dropLoc3.ondrop = function(evt){
-	var dropItem3 = evt.dataTransfer.getData('key');
-    evt.preventDefault();
-	console.log("dropped");
-	console.log(dropItem3);
-	var myElement3 = document.getElementById('dropItem3');
-	console.log(myElement3);
-	this.append(dragElement3);
-	keyboard1.play();
-}
-
-
-
-// // DRAG AND DROP
-
-// const fill = document.querySelector(".fill");
-// const empty1 = document.querySelectorAll(".empty");
-
-
-// fill.addEventListener("dragstart", dragStart);
-// fill.addEventListener("dragend", dragEnd);
-
-// // loop through empties and call drag events
-// for(const empty of empty1) {
-//     empty.addEventListener("dragover", dragOver);
-//     empty.addEventListener("dragenter", dragEnter);
-//     empty.addEventListener("dragleave", dragLeave);
-//     empty.addEventListener("drop", dragDrop);
-
-// }
-
-// // Drag Functions
-// function dragStart() {
-
-// }
-
-// function dragEnd() {
-// 	console.log("end");
-
-// }
-
-// function dragOver(e) {
-// 	e.preventDefault();
-// }
-// function dragEnter(e) {
-// 	e.preventDefault();
-// 	console.log("enter");
-// }
-// function dragLeave() {
-// 	console.log("leave");
-// }
-// function dragDrop() {
-// 	this.append(fill);
-	
-// }
+// DRAN AND DROP OVER
 
 
 // AUDIO
 // guitar part
+
 
 var audio = document.getElementById('audio');
 var isPlaying = false;
@@ -166,18 +81,8 @@ audio.onpause = function() {
 	isPlaying = false;
 };
 
+// GUITAR TWO
 
-// old version without pause thing!!!!!!!
-// function guitar() {
-// 	var audio = document.getElementById("audio");
-// 	audio.play();
-// }
-
-// function guitarTwo() {
-// 	var guitar2 = document.getElementById("guitar2");
-// 	guitar2.play();
-
-// }
 
 var guitar2 = document.getElementById('guitar2');
 var isPlaying = false;
@@ -196,12 +101,8 @@ guitar2.onpause = function() {
 	isPlaying = false;
 };
 
+// GUITAR THREE
 
-// function guitarThree() {
-// 	var guitar3 = document.getElementById("guitar3");
-// 	guitar3.play();
-
-// }
 
 var guitar3 = document.getElementById('guitar3');
 var isPlaying = false;
@@ -220,11 +121,14 @@ guitar3.onpause = function() {
 	isPlaying = false;
 };
 
+// VOICE MUSIC
+// VOICE ONE
+
 
 var accapella = document.getElementById('accapella');
-var isPlaying = false;
+var isPlaying1 = false;
 function accapellaOne() {
-	if (isPlaying) {
+	if (isPlaying1) {
 		accapella.pause()
 	} else { 
 		accapella.play();
@@ -232,16 +136,18 @@ function accapellaOne() {
 	}
 };
 accapella.onplaying = function() {
-	isPlaying = true;
+	isPlaying1 = true;
 };
 accapella.onpause = function() {
-	isPlaying = false;
+	isPlaying1 = false;
 };
 
+// VOICE TWO
+
 var accapella2 = document.getElementById('accapella2');
-var isPlaying = false;
+var isPlaying1 = false;
 function accapellaTwo() {
-	if (isPlaying) {
+	if (isPlaying1) {
 		accapella2.pause()
 	} else { 
 		accapella2.play();
@@ -249,16 +155,18 @@ function accapellaTwo() {
 	}
 };
 accapella2.onplaying = function() {
-	isPlaying = true;
+	isPlaying1 = true;
 };
 accapella2.onpause = function() {
-	isPlaying = false;
+	isPlaying1 = false;
 };
 
+// VOICE THREE
+
 var accapella3 = document.getElementById('accapella3');
-var isPlaying = false;
+var isPlaying1 = false;
 function accapellaThree() {
-	if (isPlaying) {
+	if (isPlaying1) {
 		accapella3.pause()
 	} else { 
 		accapella3.play();
@@ -266,17 +174,19 @@ function accapellaThree() {
 	}
 };
 accapella3.onplaying = function() {
-	isPlaying = true;
+	isPlaying1 = true;
 };
 accapella3.onpause = function() {
-	isPlaying = false;
+	isPlaying1 = false;
 };
 
+// DRUMS MUSIC
+// DRUMS ONE
 
 var drums1 = document.getElementById('drums1');
-var isPlaying = false;
+var isPlaying2 = false;
 function drumsOne() {
-	if (isPlaying) {
+	if (isPlaying2) {
 		drums1.pause()
 	} else { 
 		drums1.play();
@@ -284,17 +194,18 @@ function drumsOne() {
 	}
 };
 drums1.onplaying = function() {
-	isPlaying = true;
+	isPlaying2 = true;
 };
 drums1.onpause = function() {
-	isPlaying = false;
+	isPlaying2 = false;
 };
 
+// DRUMS TWO
 
 var drums2 = document.getElementById('drums2');
-var isPlaying = false;
+var isPlaying2 = false;
 function drumsTwo() {
-	if (isPlaying) {
+	if (isPlaying2) {
 		drums2.pause()
 	} else { 
 		drums2.play();
@@ -302,16 +213,18 @@ function drumsTwo() {
 	}
 };
 drums2.onplaying = function() {
-	isPlaying = true;
+	isPlaying2 = true;
 };
 drums2.onpause = function() {
-	isPlaying = false;
+	isPlaying2 = false;
 };
 
+// DRUMS THREE
+
 var drums3 = document.getElementById('drums3');
-var isPlaying = false;
+var isPlaying2 = false;
 function drumsThree() {
-	if (isPlaying) {
+	if (isPlaying2) {
 		drums3.pause()
 	} else { 
 		drums3.play();
@@ -319,16 +232,19 @@ function drumsThree() {
 	}
 };
 drums3.onplaying = function() {
-	isPlaying = true;
+	isPlaying2 = true;
 };
 drums3.onpause = function() {
-	isPlaying = false;
+	isPlaying2 = false;
 };
 
+// KEYBOARD
+// KEYBOARD ONE
+
 var keyboard1 = document.getElementById('keyboard1');
-var isPlaying = false;
+var isPlaying3 = false;
 function KeyboardOne() {
-	if (isPlaying) {
+	if (isPlaying3) {
 		keyboard1.pause()
 	} else { 
 		keyboard1.play();
@@ -336,17 +252,18 @@ function KeyboardOne() {
 	}
 };
 keyboard1.onplaying = function() {
-	isPlaying = true;
+	isPlaying3 = true;
 };
 keyboard1.onpause = function() {
-	isPlaying = false;
+	isPlaying3 = false;
 };
 
+// KEYBOARD TWO
 
 var keyboard2 = document.getElementById('keyboard2');
-var isPlaying = false;
+var isPlaying3 = false;
 function KeyboardTwo() {
-	if (isPlaying) {
+	if (isPlaying3) {
 		keyboard2.pause()
 	} else { 
 		keyboard2.play();
@@ -354,18 +271,18 @@ function KeyboardTwo() {
 	}
 };
 keyboard2.onplaying = function() {
-	isPlaying = true;
+	isPlaying3 = true;
 };
 keyboard2.onpause = function() {
-	isPlaying = false;
+	isPlaying3 = false;
 };
 
-
+// KEYBOARD THREE
 
 var keyboard3 = document.getElementById('keyboard3');
-var isPlaying = false;
+var isPlaying3 = false;
 function KeyboardThree() {
-	if (isPlaying) {
+	if (isPlaying3) {
 		keyboard3.pause()
 	} else { 
 		keyboard3.play();
@@ -373,10 +290,10 @@ function KeyboardThree() {
 	}
 };
 keyboard3.onplaying = function() {
-	isPlaying = true;
+	isPlaying3 = true;
 };
 keyboard3.onpause = function() {
-	isPlaying = false;
+	isPlaying3 = false;
 };
 
 
