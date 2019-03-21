@@ -49,6 +49,10 @@ for (const box of boxes){
 		this.className = 'box';
 		if(this.childNodes[0] && child != null){
 			this.append(currentitem);
+			currentitem.style.animation = "roll 3s 3";
+			currentitem.style.marginTop = "0";
+			
+
 		}
 		
 	}
@@ -66,6 +70,7 @@ for (const box of boxes){
 
 var audio = document.getElementById('audio');
 var isPlaying = false;
+audio.loop = true;
 function guitar() {
 	if (isPlaying) {
 		audio.pause()
@@ -86,6 +91,7 @@ audio.onpause = function() {
 
 var guitar2 = document.getElementById('guitar2');
 var isPlaying = false;
+guitar2.loop = true;
 function guitarTwo() {
 	if (isPlaying) {
 		guitar2.pause()
@@ -106,6 +112,7 @@ guitar2.onpause = function() {
 
 var guitar3 = document.getElementById('guitar3');
 var isPlaying = false;
+guitar3.volume = 0.1;
 function guitarThree() {
 	if (isPlaying) {
 		guitar3.pause()
@@ -146,6 +153,7 @@ accapella.onpause = function() {
 
 var accapella2 = document.getElementById('accapella2');
 var isPlaying1 = false;
+accapella2.volume = 1;
 function accapellaTwo() {
 	if (isPlaying1) {
 		accapella2.pause()
@@ -165,6 +173,7 @@ accapella2.onpause = function() {
 
 var accapella3 = document.getElementById('accapella3');
 var isPlaying1 = false;
+accapella3.volume = 0.5;
 function accapellaThree() {
 	if (isPlaying1) {
 		accapella3.pause()
@@ -185,6 +194,7 @@ accapella3.onpause = function() {
 
 var drums1 = document.getElementById('drums1');
 var isPlaying2 = false;
+drums1.volume = 0.4;
 function drumsOne() {
 	if (isPlaying2) {
 		drums1.pause()
@@ -204,6 +214,7 @@ drums1.onpause = function() {
 
 var drums2 = document.getElementById('drums2');
 var isPlaying2 = false;
+drums2.volume = 0.3;
 function drumsTwo() {
 	if (isPlaying2) {
 		drums2.pause()
@@ -243,6 +254,7 @@ drums3.onpause = function() {
 
 var keyboard1 = document.getElementById('keyboard1');
 var isPlaying3 = false;
+keyboard1.loop = true;
 function KeyboardOne() {
 	if (isPlaying3) {
 		keyboard1.pause()
@@ -262,6 +274,8 @@ keyboard1.onpause = function() {
 
 var keyboard2 = document.getElementById('keyboard2');
 var isPlaying3 = false;
+keyboard2.volume = 0.1;
+keyboard2.loop = true;
 function KeyboardTwo() {
 	if (isPlaying3) {
 		keyboard2.pause()
@@ -281,6 +295,7 @@ keyboard2.onpause = function() {
 
 var keyboard3 = document.getElementById('keyboard3');
 var isPlaying3 = false;
+keyboard3.volume = 0.2;
 function KeyboardThree() {
 	if (isPlaying3) {
 		keyboard3.pause()
