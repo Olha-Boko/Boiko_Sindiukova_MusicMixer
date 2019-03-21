@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 	<title>Music Mixer</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 		<header>
-			<h1>Your Awesome Band</h1>
+			<h1>Your   Awesome   Band</h1>
 			<div id="images">
 			<div id="img1">
 			<img src="images/guitar_player.svg" alt="Guital Player">
@@ -35,7 +36,7 @@
 				<div  id="iconimg3" class="box">
 				<!-- <img id="iconimg3"  src="images/mic_big.svg" alt="Microphone Icon"> -->
 			    </div>
-			    <div class="box" id="iconimg4">
+			    <div id="iconimg4" class="box">
 				<!-- <img id="iconimg4"  src="images/keyboard_big.svg" alt="Keyboard Icon"> -->
 			    </div>
 				
@@ -47,15 +48,15 @@
 					<h3>Guitar</h3>
 					<div draggable="true" class="icon">
 					<audio id="audio" src="audio/guitar1.mp3"></audio>
-					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" ondragend="guitar()" onclick="guitar()" >
+					<img class="shadowRoll" src="images/guitar_small1.svg" alt="Guitar Icon Yellow" value="PLAY" ondragend="guitar()" onclick="guitar()" >
 				    </div>
 				    <div id="guitarImg1" class="icon">
 				    <audio id="guitar2" src="audio/guitar2.mp3"></audio>
-					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" ondragend="guitarTwo()" onclick="guitarTwo()">
+					<img class="shadowRoll" src="images/guitar_small2.svg" alt="Guitar Icon Yellow" value="PLAY" ondragend="guitarTwo()" onclick="guitarTwo()">
 				    </div>
 				    <div id="guitarImg2" class="icon">
 				    <audio id="guitar3" src="audio/guitar3.mp3"></audio>
-					<img src="images/guitar_small.svg" alt="Guitar Icon Yellow" value="PLAY" onclick="guitarThree()" ondragend="guitarThree()">
+					<img class="shadowRoll" src="images/guitar_small3.svg" alt="Guitar Icon Yellow" value="PLAY" onclick="guitarThree()" ondragend="guitarThree()">
 				    </div>
 					
 				</div>
@@ -63,15 +64,15 @@
 					<h3>Drums</h3>
 					<div class="icon" id="dragElement2">
 					<audio id="drums1" src="audio/drums1.mp3"></audio>
-					<img src="images/drums_small.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsOne()" onclick="drumsOne()">
+					<img class="shadowRoll" src="images/drums_small1.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsOne()" onclick="drumsOne()">
 				    </div>
 				    <div id="drumsImg1" class="icon">
 				    <audio id="drums2" src="audio/drums2.mp3"></audio>
-					<img src="images/drums_small.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsTwo()" onclick="drumsTwo()">
+					<img class="shadowRoll" src="images/drums_small2.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsTwo()" onclick="drumsTwo()">
 				    </div>
 				    <div id="drumsImg2" class="icon">
 				    <audio id="drums3" src="audio/drums3.mp3"></audio>
-					<img src="images/drums_small.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsThree()" onclick="drumsThree()">
+					<img class="shadowRoll" src="images/drums_small3.svg" alt="Drums Icon Yellow" value="PLAY" ondragend="drumsThree()" onclick="drumsThree()">
 				    </div>
 					
 				</div>
@@ -79,15 +80,15 @@
 					<h3>Voice</h3>
 					<div class="icon" id="dragElement1">
 					<audio id="accapella" src="audio/acapella1.mp3"></audio>
-					<img src="images/mic_small.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaOne()" onclick="accapellaOne()">
+					<img class="shadowRoll" src="images/mic_small1.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaOne()" onclick="accapellaOne()">
 				    </div>
 				    <div id="voiceImg1" class="icon">
 				    <audio id="accapella2" src="audio/accapella2.mp3"></audio>
-					<img src="images/mic_small.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaTwo()" onclick="accapellaTwo()">
+					<img class="shadowRoll" src="images/mic_small2.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaTwo()" onclick="accapellaTwo()">
 				    </div>
 				    <div id="voiceImg2" class="icon">
 				    <audio id="accapella3" src="audio/acapella3.mp3"></audio>
-					<img src="images/mic_small.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaThree()" onclick="accapellaThree()">
+					<img class="shadowRoll" src="images/mic_small3.svg" alt="Mic Small Yellow" value="PLAY" ondragend="accapellaThree()" onclick="accapellaThree()">
 				   </div>
 					
 				</div>
@@ -97,15 +98,15 @@
 				    </div>
 					<div class="icon" id="dragElement3">
 					<audio id="keyboard1" src="audio/keyboard.mp3"></audio>
-					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardOne()" onclick="KeyboardOne()">
+					<img class="shadowRoll" src="images/keyboard_small1.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardOne()" onclick="KeyboardOne()">
 				    </div>
 				    <div id="keyboardImg1" class="icon">
 				    <audio id="keyboard2" src="audio/keyboard2.mp3"></audio>
-					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardTwo()" onclick="KeyboardTwo()">
+					<img class="shadowRoll" src="images/keyboard_small2.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardTwo()" onclick="KeyboardTwo()">
 				    </div>
 				    <div id="keyboardImg2" class="icon">
 				    <audio id="keyboard3" src="audio/keyboard3.mp3"></audio>
-					<img src="images/keyboard_small.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardThree()" onclick="KeyboardThree()">
+					<img class="shadowRoll" src="images/keyboard_small3.svg" alt="Keyboard Small Yellow" value="PLAY" ondragend="KeyboardThree()" onclick="KeyboardThree()">
 				    </div>
 					
 				</div>

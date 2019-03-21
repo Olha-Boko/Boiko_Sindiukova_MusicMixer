@@ -8,7 +8,7 @@
  body {
  	background-color: #101238;
  	/*background: url(../images/show.jpg) no-repeat;*/
- 	 
+ 	font-family: 'Monoton', Helvetica, sans-serif; 
  	
  }
 
@@ -21,12 +21,12 @@ header {
 }
  header h1 {
  	font-size:56px;
- 	font-family: sans-serif;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-transform: uppercase;
  	text-align: center;
  	padding-top: 220px;
- 	font-weight: bold;
+ 	/*font-weight: bold;*/
  }
 
  #images {
@@ -80,30 +80,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 	  flex-direction: row;
 	  justify-content: space-between;
 	  margin-left: 220px;
-	  margin-right: 220px;
+	  margin-right: 240px;
 	  padding-top: 20px;
 }
 
 #iconimg1 {
-	width: 110px;
-	height: 117px;
+	width: 90px;
+	height: 90px;
+	border: 3px dashed #e91989;
+	border-radius: 50%;
 }
 
 
 #iconimg2 {
-	width: 110px;
-	height: 117px;
+	width: 90px;
+	height: 90px;
+	border: 3px dashed #e91989;
+	border-radius: 50%;
 }
 
 #iconimg3 {
-	width: 110px;
-	height: 117px;
+	width: 90px;
+	height: 90px;
+	border: 3px dashed #e91989;
+	border-radius: 50%;
 }
 
 #iconimg4 {
-	width: 110px;
-	height: 117px;
+	width: 90px;
+	height: 90px;
+	border: 3px dashed #e91989;
+	border-radius: 50%;
 
+
+}
+.shadowRoll:hover{
+	-webkit-filter: drop-shadow( 0px 0px 8px rgba(225, 225, 0, .8));
+ 	 filter: drop-shadow( 0px 0px 8px rgba(225, 225, 0, .8));
+}
+/*.icon{
+	animation: roll 3s infinite;
+   	transform: rotate(30deg);
+}*/
+
+.shadowRoll:active{
+	animation: roll 3s infinite;
+   	transform: rotate(30deg);
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #choose {
@@ -115,22 +145,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 }
 
 #play h2 {
-	font-size:36px;
- 	font-family: sans-serif;
+	font-size:32px;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-align: center;
- 	font-weight: bold;
- 	margin-top: 35px;
+ 	/*font-weight: bold;*/
+ 	margin-top: 20px;
 }
 
 #guitar h3 {
-    font-size:26px;
- 	font-family: sans-serif;
+    font-size: 20px;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-align: center;
- 	font-weight: bold;
- 	margin-top: 35px;
- 	margin-bottom: 35px;
+ 	/*font-weight: bold;*/
+ 	margin-top: 25px;
+ 	margin-bottom: 15px;
 }
 
 #guitar img {
@@ -140,20 +170,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 }
 
 #guitarImg1 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #guitarImg2 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 #Drums h3 {
-	font-size:26px;
- 	font-family: sans-serif;
+	font-size:20px;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-align: center;
- 	font-weight: bold;
- 	margin-top: 35px;
- 	margin-bottom: 35px;
+ 	/*font-weight: bold;*/
+ 	margin-top: 25px;
+ 	margin-bottom: 15px;
 
 }
 
@@ -164,21 +194,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 }
 
 #drumsImg1 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #drumsImg2 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #voice h3 {
-	font-size:26px;
- 	font-family: sans-serif;
+	font-size: 20px;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-align: center;
- 	font-weight: bold;
- 	margin-top: 35px;
- 	margin-bottom: 35px;
+ 	/*font-weight: bold;*/
+ 	margin-top: 25px;
+ 	margin-bottom: 15px;
 }
 
 #voice img {
@@ -188,21 +218,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 }
 
 #voiceImg1 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #voiceImg2 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #keyboard h3 {
-	font-size:26px;
- 	font-family: sans-serif;
+	font-size: 20px;
+ 	/*font-family: sans-serif;*/
  	color: #e8af45;
  	text-align: center;
- 	font-weight: bold;
- 	margin-top: 35px;
- 	margin-bottom: 35px;
+ 	/*font-weight: bold;*/
+ 	margin-top: 25px;
+ 	margin-bottom: 15px;
+ 	margin-left: -18px;
 
 }
 
@@ -213,9 +244,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#192d55', end
 }
 
 #keyboardImg1 {
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 #keyboardImg2 {
-	margin-top: 15px;
+	margin-top: 5px;
 }

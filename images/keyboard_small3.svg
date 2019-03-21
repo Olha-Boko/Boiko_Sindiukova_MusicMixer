@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 84 84" style="enable-background:new 0 0 84 84;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F19620;}
+	.st1{fill:#E91989;}
+	.st2{fill:none;stroke:#E91989;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
+</style>
+<g>
+	<ellipse transform="matrix(0.9239 -0.3827 0.3827 0.9239 -12.8757 19.2698)" class="st0" cx="42" cy="42" rx="39" ry="39"/>
+	<path class="st1" d="M42,6c19.9,0,36,16.1,36,36S61.9,78,42,78C22.1,78,6,61.9,6,42S22.1,6,42,6 M42,0C18.8,0,0,18.8,0,42
+		s18.8,42,42,42s42-18.8,42-42S65.2,0,42,0L42,0z"/>
+</g>
+<g id="piano_x5F_group_1_">
+	<path class="st2" d="M21.5,36.3v22.1c0,1.8,1.5,3.3,3.3,3.3h34.3c1.8,0,3.3-1.5,3.3-3.3V36.3h-34H21.5z"/>
+	<path class="st2" d="M39.9,52.2c0,3.3-4,3.2-4,0l0-15.9h4L39.9,52.2z"/>
+	<path class="st2" d="M48.5,52.2c0,3.3-4,3.2-4,0l0-15.9h4L48.5,52.2z"/>
+	<path class="st2" d="M31.3,52.2c0,3.3-4,3.2-4,0l0-15.9h4L31.3,52.2z"/>
+	<line class="st2" x1="29.3" y1="54.7" x2="29.3" y2="61.7"/>
+	<line class="st2" x1="37.9" y1="54.7" x2="37.9" y2="61.7"/>
+	<line class="st2" x1="46.5" y1="54.7" x2="46.5" y2="61.7"/>
+	<path class="st2" d="M57.2,52.2c0,3.3-4,3.2-4,0l0-15.9h4L57.2,52.2z"/>
+	<line class="st2" x1="55.2" y1="54.7" x2="55.2" y2="61.7"/>
+	<path class="st2" d="M21.5,36.3c0,0-0.8-15.9,10.8-17.4c12.2-1.6,12.2,8.5,22.9,8.5c8.8-0.1,7.2,8.9,7.2,8.9"/>
+</g>
+</svg>
