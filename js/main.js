@@ -1,7 +1,7 @@
 // WORKING DRAG AND DROP!!!!!
 // ALMOST DIED TRYING TO DO IT
 
-function initDragAndDrop(box, icon) {
+function DragAndDrop(box, icon) {
 	// for all iteams
 	icon = document.querySelectorAll(".icon"); 
 	// for all drag and drop
@@ -30,7 +30,9 @@ for (const box of boxes){
 	}
 
 	function dragEnd(){
-		this.className = 'icon'; 
+		this.className = 'icon';
+		console.log('dropped')
+
 	}
 
 	function dragOver(e){
@@ -43,23 +45,24 @@ for (const box of boxes){
 
 	function dragLeave(){
 		this.className = 'box';
+		console.log("dropped")
 	}
 
-	function dragDrop(){
+	function dragDrop(e){
+		e.preventDefault();
 		this.className = 'box';
-		if(this.childNodes[0] && child != null){
+		if(this.children.length === 0 && this.childNodes[0] && child != null){
 			this.append(currentitem);
 			currentitem.style.animation = "roll 3s 3";
 			currentitem.style.marginTop = "0";
-			
-
 		}
 		
 	}
 
 	}
 
-	initDragAndDrop('.box', '.icon');
+	DragAndDrop('.box', '.icon');
+
 
 // DRAN AND DROP OVER
 
